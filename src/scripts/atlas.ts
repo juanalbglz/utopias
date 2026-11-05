@@ -244,5 +244,10 @@ export function iniciar() {
 
   pintarVB(); pintarTinta(); aplicar();
   const hash = decodeURIComponent(location.hash.slice(1));
-  if (porId.has(hash)) { seleccionar(hash, { historia: false }); figura.scrollIntoView({ block: 'start' }); }
+  if (porId.has(hash)) {
+    seleccionar(hash, { historia: false });
+    // El navegador salta a la fila de la lista al cargar; después, se vuelve al mapa.
+    const alMapa = () => requestAnimationFrame(() => figura.scrollIntoView({ block: 'start' }));
+    if (document.readyState === 'complete') alMapa(); else addEventListener('load', alMapa, { once: true });
+  }
 }
