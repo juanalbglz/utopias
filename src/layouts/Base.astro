@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+
+interface Props { title: string; description: string; inicio?: boolean }
+const { title, description, inicio } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const home = 'https://juanalbglz.eu/';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{inicio ? `${title} · Juan Alberto González` : `${title} · Utopía y revolución`}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="es_ES" />
+    <link rel="preload" href={`${base}fonts/bricolage-grotesque-latin-800-normal.woff2`} as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#efe6d2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="tinta"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="3" seed="7" result="t" /><feDisplacementMap in="SourceGraphic" in2="t" scale="4" /></filter>
+    </svg>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href={home}>Juan Alberto González</a>
+        <nav aria-label="Principal">
+          <a href={home}>Inicio</a>
+          <a href={`${home}blog/`}>Blog</a>
+          <a href="https://arthist.juanalbglz.eu/">Arthist</a>
+          <a href={base} aria-current={inicio ? 'page' : undefined}>Utopías</a>
+          <a href="https://canarias.africa/">Canarias.Africa</a>
+          <a href={`${home}#contacto`}>Contacto</a>
+          <a href="https://mastodon.art/@juanalbglz" rel="me">Mastodon</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <span>© Juan Alberto González · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a> · Mapa: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público)</span>
+        <span>Esta web no usa cookies, analítica ni rastreadores.</span>
+      </div>
+    </footer>
+  </body>
+</html>

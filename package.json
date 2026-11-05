@@ -1,0 +1,17 @@
+{
+  "name": "utopias",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "imagenes": "node scripts/imagenes.mjs"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "d3-geo": "3.1.2",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2"
+  }
+}

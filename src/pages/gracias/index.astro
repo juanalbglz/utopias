@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+const errores = {
+  datos: 'Falta algún dato o el correo no es válido.',
+  limite: 'Has enviado demasiadas propuestas seguidas. Prueba dentro de una hora.',
+  origen: 'El envío no salió de esta web.',
+  envio: 'No se pudo enviar la propuesta. Prueba más tarde o escríbeme por Mastodon.',
+};
+---
+<Base title="Gracias" description="Propuesta enviada.">
+  <meta name="robots" content="noindex" />
+  <div id="ok">
+    <h1 class="ink">Propuesta enviada</h1>
+    <p class="lede">Gracias por proponer otra utopía. La revisaré y, si encaja, la añadiré al mapa.</p>
+  </div>
+  <div id="ko" hidden>
+    <h1 class="ink">No se ha enviado</h1>
+    <p class="lede" id="ko-texto"></p>
+  </div>
+  <p><a href={import.meta.env.BASE_URL}>← Volver al mapa</a></p>
+  <script define:vars={{ errores }}>
+    const codigo = new URLSearchParams(location.search).get('error');
+    if (codigo) {
+      document.getElementById('ok').hidden = true;
+      document.getElementById('ko').hidden = false;
+      document.getElementById('ko-texto').textContent = errores[codigo] || errores.envio;
+    }
+  </script>
+</Base>
