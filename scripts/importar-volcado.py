@@ -81,6 +81,10 @@ def local(url):
     if m:
         ruta = m.group(1)
         fuentes = [f'{WB}id_/https://{h}.noblogs.org/files/{ruta}' for h in ('nolugaria', 'utopias')]
+        # Si la miniatura (-1024x394) no está archivada, se prueba con el original.
+        original = re.sub(r'-\d+x\d+(\.\w+)$', r'\1', ruta)
+        if original != ruta:
+            fuentes += [f'{WB}id_/https://{h}.noblogs.org/files/{original}' for h in ('nolugaria', 'utopias')]
     else:
         nombre = re.sub(r'[^\w.-]', '_', url.split('?')[0].rstrip('/').rsplit('/', 1)[-1])
         ruta = f'externas/{nombre}'

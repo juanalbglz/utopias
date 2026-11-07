@@ -4,7 +4,7 @@ fecha: "2021-04-18"
 secciones: ["biblioteca"]
 original: "/biblioteca-utopica/la-republica/"
 ---
-[Imagen: Introducing Plato de Dave Robinson, portada](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/Captura-de-pantalla-2021-05-13-084239.png)
+![Introducing Plato de Dave Robinson, portada](/nolugaria/2021/04/Captura-de-pantalla-2021-05-13-084239.png)
 
 Si nos queremos remontar a las obras precursoras de la utopía, aún si el término utopía no fue inventado hasta 1516 por Tomás Moro [↗](/utopistas/tomas-moro/), tenemos obligatoriamente que pasar por Platón.
 

@@ -5,7 +5,7 @@ secciones: ["colaboraciones"]
 etiquetas: ["Antoni Gaudi", "Arcadi Oliveres", "Calafou de l'Anoia", "Can Masdeu", "colaboración", "experiencias utópicas", "Grupo Ecos", "I Nau Bostik", "Itziar González", "Marina Garcés", "Nuria Güell", "pensadoras utópicas", "Pere", "trabajo en proceso"]
 original: "/colaboraciones-utopicas/gracias-pere/"
 ---
-[Imagen: Imagen de mohamed Hassan en Pixabay](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/hands-2715976_640.png)
+![Imagen de mohamed Hassan en Pixabay](/nolugaria/2021/05/hands-2715976_640.png)
 
 Imagen de [mohamed Hassan](https://pixabay.com/es/users/mohamed_hassan-5229782/) en [Pixabay](https://pixabay.com/es/)
 

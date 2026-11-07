@@ -4,7 +4,7 @@ fecha: "2021-05-16"
 secciones: ["utopistas"]
 original: "/utopistas/arcadi-oliveres-i-boadella/"
 ---
-[Imagen: Arcadi Olivares 2005, por GuillemMedina, CC BY-SA 4.0, via Wikimedia Commons](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/Arcadi_Oliveres_20051-1568x1043.jpg)
+![Arcadi Olivares 2005, por GuillemMedina, CC BY-SA 4.0, via Wikimedia Commons](/nolugaria/2021/05/Arcadi_Oliveres_20051-1568x1043.jpg)
 
 Arcadi Olivares 2005, por GuillemMedina, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), vía [Wikimedia Commons](https://es.wikipedia.org/wiki/Arcadi_Oliveres#/media/Archivo:Arcadi_Oliveres_%282005%29.jpg)
 
@@ -48,7 +48,7 @@ Si bien Arcadi Oliveres no participó nunca por la via institucional en la polí
 >   
 > ↗
 
-  [[Imagen: Xerrada Arcadi Oliveres,5 de juny.](https://live.staticflickr.com/3583/5801474939_b6634b673a_z.jpg)](https://flic.kr/p/9QE5nZ) Xerrada Arcadi Oliveres,5 de juny, Foto de Gerard Canadell [↗](https://www.flickr.com/photos/acampadagirona/5801474939/) 
+  [![Xerrada Arcadi Oliveres,5 de juny.](/nolugaria/externas/5801474939_b6634b673a_z.jpg)](https://flic.kr/p/9QE5nZ) Xerrada Arcadi Oliveres,5 de juny, Foto de Gerard Canadell [↗](https://www.flickr.com/photos/acampadagirona/5801474939/) 
 
 - Campaña a favor del 0,7%  
 - Campaña a favor de la objeción fiscal al gasto militar  
