@@ -35,6 +35,8 @@ DESTACADAS = {
     'utopistas/tomas-moro': (
         'files/2021/04/Hans_Holbein_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project-1568x1951.jpg', 'Retrato de Tomás Moro por Hans Holbein el Joven',
         'De Hans Holbein el Joven, dominio público, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=13466190)'),
+    'biblioteca-utopica/la-republica': (
+        'files/2021/04/Captura-de-pantalla-2021-05-13-084239.png', 'Introducing Plato de Dave Robinson, portada', None),
     'experiencias-utopica/gaetan-le-meil': ('files/2021/05/2005072710405619_low1.jpg', '', None),
 }
 # Copias en PDF de novelas con derechos de autor vigentes: no se vuelven a enlazar.
