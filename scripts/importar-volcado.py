@@ -32,6 +32,9 @@ DESTACADAS = {
     'termino-utopico/buscando-la-utopia': (
         'files/2021/05/33324855562_5655541a80_b.jpg', 'Lanzarote - Antiguo faro de Playa Blanca por Antonio Marín Segovia',
         'Lanzarote - Antiguo faro de Playa Blanca por [Antonio Marín Segovia](https://www.flickr.com/photos/antoniomarinsegovia/33324855562)'),
+    'utopistas/tomas-moro': (
+        'files/2021/04/Hans_Holbein_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project-1568x1951.jpg', 'Retrato de Tomás Moro por Hans Holbein el Joven',
+        'De Hans Holbein el Joven, dominio público, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=13466190)'),
     'experiencias-utopica/gaetan-le-meil': ('files/2021/05/2005072710405619_low1.jpg', '', None),
 }
 # Copias en PDF de novelas con derechos de autor vigentes: no se vuelven a enlazar.

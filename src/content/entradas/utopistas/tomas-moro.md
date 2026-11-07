@@ -4,6 +4,10 @@ fecha: "2021-04-18"
 secciones: ["utopistas"]
 original: "/utopistas/tomas-moro/"
 ---
+[Imagen: Retrato de Tomás Moro por Hans Holbein el Joven](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/Hans_Holbein_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project-1568x1951.jpg)
+
+De Hans Holbein el Joven, dominio público, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=13466190)
+
 Thomas More es también conocido por su nombre castellanizado Tomás Moro o por su nombre en latín Thomas Morus, o por personas de fe católica o anglicana como santo Tomás Moro.
 
 Fue un teólogo, político, humanista y escritor, jurista, profesor de leyes, juez y abogado inglés nacido en Londres en 1478.
