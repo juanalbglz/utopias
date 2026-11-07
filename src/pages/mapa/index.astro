@@ -1,0 +1,180 @@
+---
+import Base from '../../layouts/Base.astro';
+import Propuesta from '../../components/Propuesta.astro';
+import { cargarSucesos, CATEGORIAS } from '../../lib/datos';
+import { ANCHO, ALTO, tierraD, reticulaD, situar, ZONAS } from '../../lib/mapa';
+import { pos, MARCAS, MENORES, etiqueta, EPOCAS, TRAMOS } from '../../lib/escala';
+
+const sucesos = situar(cargarSucesos());
+const cats = Object.fromEntries(CATEGORIAS.map((c) => [c.id, c]));
+const cuenta = (id: string) => sucesos.filter((s) => s.categoria === id).length;
+const primero = sucesos[0], ultimo = sucesos[sucesos.length - 1];
+
+// Eje de tiempo: cada suceso es una barra (si dura) o una marca, en la primera fila libre.
+const AE = 1000, FILA = 9, ALTO_BARRA = 6, MIN_ANCHO = 3;
+const filas: number[] = [];
+const barras = sucesos.map((s) => {
+  const x = pos(s.inicio) * AE;
+  const w = Math.max(MIN_ANCHO, pos(s.fin ?? s.inicio) * AE - x);
+  let f = filas.findIndex((fin) => fin + 1.5 < x);
+  if (f < 0) { filas.push(0); f = filas.length - 1; }
+  filas[f] = x + w;
+  return { id: s.id, cat: s.categoria, x: +x.toFixed(2), w: +w.toFixed(2), y: 4 + f * FILA, titulo: `${s.fechas} · ${s.titulo}` };
+});
+const altoEje = 4 + filas.length * FILA + 2;
+const cortes = TRAMOS.slice(1).map(([a]) => pos(a) * AE);
+
+const datos = {
+  sucesos: sucesos.map((s) => ({ id: s.id, i: s.inicio, f: s.fin ?? s.inicio, c: s.categoria, x: s.x, y: s.y, t: s.titulo })),
+  zonas: ZONAS,
+  ancho: ANCHO, alto: ALTO,
+};
+const marcaEje = (n: number) => (n === 0 ? '1' : etiqueta(n));
+const menores = new Set(MENORES);
+const descripcion = `${sucesos.length} revueltas populares, utopías pensadas y utopías vividas en un mapa del mundo con su línea de tiempo, de ${primero.lugar} (${primero.fechas}) a ${ultimo.lugar} (${ultimo.fechas}).`;
+---
+<Base title="Utopía y revolución" description={descripcion} actual="mapa">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <circle id="s-revueltas" r="1" />
+      <path id="s-pensamiento" d="M0-1.3 1.3 0 0 1.3-1.3 0Z" />
+      <path id="s-experiencias" d="M0-1.05A1.05 1.05 0 1 1 0 1.05 1.05 1.05 0 1 1 0-1.05ZM0-.45A.45 .45 0 1 0 0 .45 .45 .45 0 1 0 0-.45Z" fill-rule="evenodd" />
+      <path id="s-arte" d="M0-1.3 1.2.85-1.2.85Z" />
+    </defs>
+  </svg>
+
+  <section class="hero ink-soft">
+    <span class="stamp">Mapa y línea de tiempo</span>
+    <p class="eyebrow">De {primero.fechas} a {ultimo.fechas}</p>
+    <h1 class="ink">Utopía y <em>revolución</em></h1>
+    <p class="lede">{sucesos.length} revueltas populares, utopías pensadas, utopías vividas y obras de arte que imaginan otro mundo. Elige una época en la línea de tiempo y pulsa un punto del mapa para leer su ficha.</p>
+    <div class="acciones">
+      <a class="boton" href="#propuesta">Propón otra utopía</a>
+      <a href="#todos">Ver la lista completa</a>
+    </div>
+  </section>
+
+  <section class="atlas" aria-label="Mapa y línea de tiempo">
+    <div class="controles">
+      <fieldset class="chips" id="categorias">
+        <legend>Qué mostrar</legend>
+        {CATEGORIAS.map((c) => (
+          <button type="button" class="chip" data-cat={c.id} aria-pressed="true">
+            <svg viewBox="-1.6 -1.6 3.2 3.2" aria-hidden="true"><use href={`#s-${c.id}`} class={`f-${c.id}`} stroke-width=".3" /></svg>
+            {c.nombre} <span class="n">{cuenta(c.id)}</span>
+          </button>
+        ))}
+      </fieldset>
+      <fieldset class="chips zonas" id="zonas">
+        <legend>Encuadre del mapa</legend>
+        {ZONAS.map((z, i) => <button type="button" class="chip" data-zona={i} aria-pressed={i === 0 ? 'true' : 'false'}>{z.nombre}</button>)}
+      </fieldset>
+    </div>
+
+    <div class="escena">
+      <figure class="mapa" id="mapa" style={`--ar:${ANCHO}/${ALTO}`}>
+        <svg viewBox={`0 0 ${ANCHO} ${ALTO}`} role="img" aria-label="Mapa del mundo con los sucesos. La lista completa está más abajo.">
+          <filter id="tinta-mapa" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="7" result="t" /><feDisplacementMap in="SourceGraphic" in2="t" scale="2.4" /></filter>
+          <path class="reticula" d={reticulaD} />
+          <path class="tierra" d={tierraD} filter="url(#tinta-mapa)" />
+          <g id="marcas">
+            {sucesos.map((s) => (
+              <g class="marca" data-id={s.id} transform={`translate(${s.x} ${s.y}) scale(4)`}>
+                <title>{s.fechas} · {s.titulo}</title>
+                <circle class="halo" r="2.1" />
+                <use href={`#s-${s.categoria}`} class={`f-${s.categoria}`} />
+              </g>
+            ))}
+          </g>
+        </svg>
+        <div class="zoom">
+          <button type="button" data-zoom="1.6" aria-label="Acercar">+</button>
+          <button type="button" data-zoom="0.625" aria-label="Alejar">−</button>
+        </div>
+      </figure>
+
+      <aside class="ficha" id="ficha" aria-live="polite" aria-label="Ficha del suceso">
+        <div class="inicio-ficha">
+          <p class="eyebrow">Cómo se usa</p>
+          <h3>Pulsa un punto</h3>
+          <p>Cada punto del mapa es un suceso. Arrastra para mover el mapa, usa + y − o los encuadres de arriba para acercarte (Europa está muy llena).</p>
+          <p>Debajo del mapa, la línea de tiempo: mueve sus dos tiradores rojos o elige una época, y el mapa muestra solo lo que pasó entonces.</p>
+          <p><button type="button" class="boton" id="empezar">Empezar por el principio</button></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="tiempo">
+      <div class="fila">
+        <p class="estado" id="estado">Todo: <span>{sucesos.length}</span> sucesos</p>
+        <div class="chips" id="epocas">
+          {EPOCAS.map((e, i) => <button type="button" class="chip" data-desde={e.desde} data-hasta={e.hasta} aria-pressed={i === 0 ? 'true' : 'false'}>{e.nombre}</button>)}
+        </div>
+      </div>
+      <div class="eje" style={`--alto-eje:${Math.round(altoEje * 0.9)}px`}>
+        <svg viewBox={`0 0 ${AE} ${altoEje}`} preserveAspectRatio="none" id="eje" aria-hidden="true">
+          {cortes.map((x) => <line class="corte" x1={x} x2={x} y1="0" y2={altoEje} />)}
+          {barras.map((b) => <rect class={`barra c-${b.cat}`} data-id={b.id} x={b.x} y={b.y} width={b.w} height={ALTO_BARRA}><title>{b.titulo}</title></rect>)}
+          <rect class="fuera" id="fuera-i" x="0" y="0" width="0" height={altoEje} />
+          <rect class="fuera" id="fuera-d" x={AE} y="0" width="0" height={altoEje} />
+        </svg>
+        <div class="marcas-eje" aria-hidden="true">
+          {MARCAS.map((n) => <span class={menores.has(n) ? 'menor' : undefined} style={`left:${(pos(n) * 100).toFixed(2)}%`}>{marcaEje(n)}</span>)}
+        </div>
+        <div class="rango">
+          <input type="range" id="desde" min="0" max="1000" value="0" aria-label="Desde el año" />
+          <input type="range" id="hasta" min="0" max="1000" value="1000" aria-label="Hasta el año" />
+        </div>
+      </div>
+      <p class="meta">La escala del tiempo cambia en cada línea de puntos: los siglos con más sucesos ocupan más espacio.</p>
+    </div>
+  </section>
+
+  <h2 id="todos">Todos los sucesos</h2>
+  <ol class="lista" id="lista">
+    {sucesos.map((s) => (
+      <li class="suceso" id={s.id} data-id={s.id}>
+        <div class="cabeza">
+          <span class="anio">{s.fechas}</span>
+          <h3><a href={`#${s.id}`}>{s.titulo}</a></h3>
+          <p class="meta">
+            <span class="cat"><svg viewBox="-1.6 -1.6 3.2 3.2" aria-hidden="true"><use href={`#s-${s.categoria}`} class={`f-${s.categoria}`} stroke-width=".3" /></svg>{cats[s.categoria].nombre}</span>
+            {s.lugar && <> · {s.lugar}</>}
+          </p>
+          <details>
+            <summary>Leer</summary>
+            <div class="cuerpo">
+              {s.imagen && (
+                <figure>
+                  <img src={s.imagen.src} alt={s.imagen.pie || ''} loading="lazy" decoding="async" />
+                  {(s.imagen.pie || s.imagen.credito) && <figcaption>{s.imagen.pie}{s.imagen.credito && <span class="credito">{s.imagen.credito}</span>}</figcaption>}
+                </figure>
+              )}
+              {s.descripcion.map((p) => <p>{p}</p>)}
+              <div class="enlaces">
+                {s.web && <p><a href={s.web} rel="noopener">Más información</a></p>}
+                {(s.fuente || s.fuenteUrl) && (
+                  <p>Fuente: {s.fuenteUrl ? <a href={s.fuenteUrl} rel="noopener">{s.fuente || s.fuenteUrl}</a> : s.fuente}</p>
+                )}
+              </div>
+            </div>
+          </details>
+        </div>
+      </li>
+    ))}
+  </ol>
+
+  <section class="origen" id="origen">
+    <h2>De dónde viene</h2>
+    <p>Este mapa nació en <strong>Nolugaria</strong> («no lugar», lo que significa utopía). Se publicó el 2 de junio de 2021 en su blog de <a href="https://noblogs.org/">Noblogs</a>, la plataforma del colectivo italiano Autistici/Inventati, con el título «Timemap de revueltas, revoluciones y utopías». Era una versión beta y colaborativa que quería recoger las luchas de las personas por defender sus derechos y contra la opresión, e invitaba a cualquiera a sumar las suyas. El blog original ya no está disponible; esta web es <a href="/">su reconstrucción</a>, y queda la cuenta <a href="https://x.com/nolugaria">@nolugaria</a>.</p>
+    <p>Entonces se hizo con TimeMapper, de Open Knowledge Foundation, a partir de una hoja de cálculo compartida. Esta versión usa los mismos datos y se sirve desde esta web, sin depender de ningún servicio externo. La invitación sigue abierta: <a href="#propuesta">propón otra utopía</a>.</p>
+  </section>
+
+  <Propuesta />
+
+  <script type="application/json" id="datos" set:html={JSON.stringify(datos)} />
+  <script>
+    import { iniciar } from '../../scripts/atlas';
+    iniciar();
+  </script>
+</Base>

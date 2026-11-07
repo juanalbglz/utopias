@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import Propuesta from '../../components/Propuesta.astro';
+import { getEntry, render } from 'astro:content';
+const p = (await getEntry('paginas', 'participa'))!;
+const { Content } = await render(p);
+---
+<Base title={p.data.titulo} description="Cómo colaborar con No Lugaria: aporta nuevas experiencias utópicas o corrige lo que ya está." actual="participa">
+  <h1 class="ink">{p.data.titulo}</h1>
+  <div class="prose"><Content /></div>
+  <Propuesta titulo="Formulario de propuestas" />
+</Base>

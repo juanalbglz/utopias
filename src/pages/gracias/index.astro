@@ -17,7 +17,7 @@ const errores = {
     <h1 class="ink">No se ha enviado</h1>
     <p class="lede" id="ko-texto"></p>
   </div>
-  <p><a href={import.meta.env.BASE_URL}>← Volver al mapa</a></p>
+  <p><a href="/mapa/">← Volver al mapa</a></p>
   <script define:vars={{ errores }}>
     const codigo = new URLSearchParams(location.search).get('error');
     if (codigo) {

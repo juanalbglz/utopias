@@ -1,0 +1,14 @@
+---
+import type { Entrada } from '../lib/entradas';
+import { fecha, seccion } from '../lib/nolugaria';
+interface Props { entradas: Entrada[] }
+const { entradas } = Astro.props;
+---
+<ol class="entradas">
+  {entradas.map((e) => (
+    <li>
+      <p class="meta"><time datetime={e.data.fecha.toISOString().slice(0, 10)}>{fecha(e.data.fecha)}</time> · {e.data.secciones.map((s) => seccion(s).nombre).join(', ')}{e.data.subseccion && <> · {e.data.subseccion}</>}</p>
+      <h3><a href={e.data.original}>{e.data.titulo}</a></h3>
+    </li>
+  ))}
+</ol>
