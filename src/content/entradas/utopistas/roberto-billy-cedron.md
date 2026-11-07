@@ -6,7 +6,7 @@ original: "/utopistas/roberto-billy-cedron/"
 ---
 A Roberto Cedrón lo conocí en 2005 en Douarnenez 
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/Icon_External_Link.png)
+↗
 
 , pequeña población del Finisterre bretón, en la que tenía su taller, en la época en «Ma Friche Mar Pijl».
 

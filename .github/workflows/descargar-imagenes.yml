@@ -38,7 +38,7 @@ jobs:
           echo "Descargadas: $ok · sin conseguir: $fallo" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Subir a la rama
         run: |
-          git add public/imagenes
+          git add public/nolugaria
           if git diff --cached --quiet; then echo "Nada nuevo"; exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898283+github-actions[bot]@users.noreply.github.com" \
             commit -m "Añadir imágenes de nolugaria descargadas de la Wayback Machine"

@@ -63,7 +63,7 @@ def iframe(url):
 def imagen(m):
     return figura(m.group(1), m.group(2))
 
-# Imágenes que se sirven desde la propia web (public/imagenes/). Las descarga el flujo
+# Imágenes que se sirven desde la propia web (public/nolugaria/). Las descarga el flujo
 # .github/workflows/descargar-imagenes.yml a partir de scripts/imagenes.tsv.
 DESCARGAS = {}
 FICHAS = {
@@ -85,12 +85,13 @@ def local(url):
         nombre = re.sub(r'[^\w.-]', '_', url.split('?')[0].rstrip('/').rsplit('/', 1)[-1])
         ruta = f'externas/{nombre}'
         fuentes = [url, f'{WB}id_/{url}']
-    return f'imagenes/{ruta}', fuentes
+    return f'nolugaria/{ruta}', fuentes
 
 def figura(alt, url):
     alt, url = re.sub(r'\s+', ' ', alt.strip()), url.strip()
     texto = alt if alt else 'imagen'
-    if 'wikipedia.org/w/skins/' in url: return '↗'  # icono de enlace externo de Wikipedia
+    if 'wikipedia.org/w/skins/' in url or 'Icon_External_Link' in url: return '↗'  # icono de enlace externo
+    if 'mail.riseup.net' in url: return ''  # captura de un correo privado: no se publica
     destino, fuentes = local(url)
     DESCARGAS[destino] = fuentes
     if (PUBLICO / destino).exists():
