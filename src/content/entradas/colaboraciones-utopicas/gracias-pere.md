@@ -14,12 +14,12 @@ Hoy hemos recibido la inestimable ayuda de Pere, que nos ha enviado un correo, i
 Así que de esta manera, añadimos a la información pendiente de trabajar:
 
 Pensadoras:  
-Arcadi Oliveres  
-Nuria Güell  
-Federica Montseny  
-Antoni Gaudi  
-Iztiar González  
-Marina Garcés
+[Arcadi Oliveres](/utopistas/arcadi-oliveres-i-boadella/)  
+[Nuria Güell](/utopistas/nuria-guell/)  
+[Federica Montseny](/utopistas/federica-montseny/)  
+[Antoni Gaudi](/utopistas/antoni-gaudi/)  
+[Iztiar González](/utopistas/itziar-gonzalez/)  
+[Marina Garcés](/utopistas/marina-garces/)
 
 Experiencias:  
 Calafou de l’Anoia – colonia eco industrial postcapitalista  

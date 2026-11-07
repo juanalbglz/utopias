@@ -14,7 +14,7 @@ Arcadi fue un economista y activista catalán referente de los movimientos socia
 
 > Yo sigo el ejemplo que mi padre me enseñó. Él fue víctima de la guerra civil española y nos prohibió a todos mis hermanos y a mí tener un solo juguete bélico o leer comics que presentaran signos de violencia. Quizás alguien puede pensar que es muy radical y absoluto, y quizás es así, pero pienso que dio buenos resultados.  
 >   
-> Entrevista a Arcadi Oliveres – tiching [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](http://blog.tiching.com/arcadi-oliveres-la-paz-quiere-decir-desarrollo-violencia-derechos-humanos/)
+> Entrevista a Arcadi Oliveres – tiching [↗](http://blog.tiching.com/arcadi-oliveres-la-paz-quiere-decir-desarrollo-violencia-derechos-humanos/)
 
 ## Los inicios
 
@@ -24,19 +24,19 @@ Nacido en el barrio de Esquerra de l’Eixamplem cursa estudios primarios en los
 
 Entra en la facultad de ciencias económicas de la Universidad de Barcelona, implicándose activamente en el Sindicato Democrático de Estudiantes de Barcelona [](https://ca.wikipedia.org/wiki/Sindicat_Democr%C3%A0tic_d%27Estudiants_de_la_Universitat_de_Barcelona)a partir de 1966, participando en la Capuchinada. En 1968 obtiene el título de licenciado en Ciencias Económicas, siendo juzgado y absuelto en mayo del mismo año por el Tribunal del Orden Público por reunión clandestina.
 
-En la década de 1970 se implica en actividades a favor de la democracia y el autogobierno en Cataluña, participando en la Asamblea de Cataluña[[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)
+En la década de 1970 se implica en actividades a favor de la democracia y el autogobierno en Cataluña, participando en la Asamblea de Cataluña[↗
 
-.](https://es.wikipedia.org/wiki/Asamblea_de_Catalu%C3%B1a) Fue fundador también de la Asociación de Vecinas y Vecinos de la Izquierda del Eixample de Barcelona [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](http://www.avvee.org/), militando también en Cristianos por el Socialismo [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://es.wikipedia.org/wiki/Cristianos_por_el_Socialismo).
+.](https://es.wikipedia.org/wiki/Asamblea_de_Catalu%C3%B1a) Fue fundador también de la Asociación de Vecinas y Vecinos de la Izquierda del Eixample de Barcelona [↗](http://www.avvee.org/), militando también en Cristianos por el Socialismo [↗](https://es.wikipedia.org/wiki/Cristianos_por_el_Socialismo).
 
-A partir del año 1974 comienza a participar en la organización católica Pax Christi [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://paxchristi.net/), dedicada a la promoción de la cultura de la paz y la reconciliación de los pueblos, de la que fue co-presidente entre 1974 y 1990, participando en múltiples demonstraciones en oposición a la pena de muerte durante el franquismo.
+A partir del año 1974 comienza a participar en la organización católica Pax Christi [↗](https://paxchristi.net/), dedicada a la promoción de la cultura de la paz y la reconciliación de los pueblos, de la que fue co-presidente entre 1974 y 1990, participando en múltiples demonstraciones en oposición a la pena de muerte durante el franquismo.
 
 ## Democracia
 
-En 1977 participa en la creación de la Asociación Catalana de Solidaridad y Ayuda al Refugiado ( Actualmente Fundación ACSAR [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://fundacioacsar.org/es/inicio/)) de la cual fue miembro activo. A partir de 1978 comienza a dedicarse a la docencia, inicialmente en el Instituro Victor Seix de Potemologia, y a partir de 1980 en la Escuela deEstudios Empresariales de Sabadell, de la Universidad Autónoma de Barcelona.
+En 1977 participa en la creación de la Asociación Catalana de Solidaridad y Ayuda al Refugiado ( Actualmente Fundación ACSAR [↗](https://fundacioacsar.org/es/inicio/)) de la cual fue miembro activo. A partir de 1978 comienza a dedicarse a la docencia, inicialmente en el Instituro Victor Seix de Potemologia, y a partir de 1980 en la Escuela deEstudios Empresariales de Sabadell, de la Universidad Autónoma de Barcelona.
 
 En 1981 comienza su militancia en la organización cristiana Justicia y Paz, dedicada a los derechos humanos y la paz. Elaboró un informe por la campaña por el 0,7%. Desde 1986 fue vicepresidente de esta entidad, y tras la muerte del presidente, Joan Gomis, fue elegido presidente de la entidad, cargo que mantuvo hasta 2014.
 
-En 1993 obtiene el título de doctor, con la tesis «La viabilitat económica del desarmament. El cas de la industria militar Espanyola» [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://dialnet.unirioja.es/servlet/tesis?codigo=174693), ganando una plaza como profesor titular del Departamento de Economía Aplicada impartiendo clases en la Facultad de Ciencias Políticas
+En 1993 obtiene el título de doctor, con la tesis «La viabilitat económica del desarmament. El cas de la industria militar Espanyola» [↗](https://dialnet.unirioja.es/servlet/tesis?codigo=174693), ganando una plaza como profesor titular del Departamento de Economía Aplicada impartiendo clases en la Facultad de Ciencias Políticas
 
 ## Pensamiento y Activismo
 
@@ -46,9 +46,9 @@ Si bien Arcadi Oliveres no participó nunca por la via institucional en la polí
 >   
 > Entrevista en ElDiario.es   
 >   
-> [Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)
+> ↗
 
-  [[Imagen: Xerrada Arcadi Oliveres,5 de juny.](https://live.staticflickr.com/3583/5801474939_b6634b673a_z.jpg)](https://flic.kr/p/9QE5nZ) Xerrada Arcadi Oliveres,5 de juny, Foto de Gerard Canadell [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://www.flickr.com/photos/acampadagirona/5801474939/) 
+  [[Imagen: Xerrada Arcadi Oliveres,5 de juny.](https://live.staticflickr.com/3583/5801474939_b6634b673a_z.jpg)](https://flic.kr/p/9QE5nZ) Xerrada Arcadi Oliveres,5 de juny, Foto de Gerard Canadell [↗](https://www.flickr.com/photos/acampadagirona/5801474939/) 
 
 - Campaña a favor del 0,7%  
 - Campaña a favor de la objeción fiscal al gasto militar  
@@ -69,12 +69,12 @@ Si bien Arcadi Oliveres no participó nunca por la via institucional en la polí
 
 ## Publicaciones
 
-Arcadi Oliveres Boadella en Dialnet [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://dialnet.unirioja.es/servlet/autor?codigo=149091)
+Arcadi Oliveres Boadella en Dialnet [↗](https://dialnet.unirioja.es/servlet/autor?codigo=149091)
 
 ## Otros recursos
 
-Página web [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://arcadioliveres.cat/)
+Página web [↗](https://arcadioliveres.cat/)
 
-Obituario [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://missatges.arcadioliveres.cat/)
+Obituario [↗](https://missatges.arcadioliveres.cat/)
 
-Arcadi Oliveres en archive.org [[Imagen: imagen](https://es.wikipedia.org/w/skins/Vector/resources/common/images/external-link-ltr-icon.svg)](https://archive.org/search.php?query=Arcadi%20Oliveres)
+Arcadi Oliveres en archive.org [↗](https://archive.org/search.php?query=Arcadi%20Oliveres)
