@@ -5,7 +5,7 @@ secciones: ["terminologia"]
 etiquetas: ["felicidad", "utopia", "viaje", "vida"]
 original: "/termino-utopico/buscando-la-utopia/"
 ---
-[Imagen: Lanzarote - Antiguo faro de Playa Blanca por Antonio Marín Segovia](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/33324855562_5655541a80_b.jpg)
+![Lanzarote - Antiguo faro de Playa Blanca por Antonio Marín Segovia](/nolugaria/2021/05/33324855562_5655541a80_b.jpg)
 
 Lanzarote - Antiguo faro de Playa Blanca por [Antonio Marín Segovia](https://www.flickr.com/photos/antoniomarinsegovia/33324855562)
 

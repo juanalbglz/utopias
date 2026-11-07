@@ -1,0 +1,45 @@
+name: Descargar imágenes de nolugaria
+
+# Descarga de la Wayback Machine las imágenes que lista scripts/imagenes.tsv
+# (lo genera scripts/importar-volcado.py) y las guarda en public/. Solo baja
+# las que faltan y sube el resultado a la misma rama.
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths: [scripts/imagenes.tsv, .github/workflows/descargar-imagenes.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar
+        run: |
+          ok=0; fallo=0
+          while IFS=$'\t' read -r destino fuentes; do
+            f="public/$destino"
+            [ -s "$f" ] && continue
+            mkdir -p "$(dirname "$f")"
+            hecho=0
+            for url in $(echo "$fuentes" | tr '\t' ' '); do
+              if curl -fsSL --retry 3 --retry-delay 5 -m 60 -A "nolugaria-reconstruccion" -o "$f.tmp" "$url" \
+                 && file --mime-type -b "$f.tmp" | grep -q '^image/'; then
+                mv "$f.tmp" "$f"; hecho=1; break
+              fi
+              rm -f "$f.tmp"; sleep 2
+            done
+            if [ $hecho = 1 ]; then ok=$((ok+1)); echo "OK   $destino"; else fallo=$((fallo+1)); echo "FALTA $destino"; fi
+            sleep 1
+          done < scripts/imagenes.tsv
+          echo "Descargadas: $ok · sin conseguir: $fallo" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Subir a la rama
+        run: |
+          git add public/nolugaria
+          if git diff --cached --quiet; then echo "Nada nuevo"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898283+github-actions[bot]@users.noreply.github.com" \
+            commit -m "Añadir imágenes de nolugaria descargadas de la Wayback Machine"
+          git push

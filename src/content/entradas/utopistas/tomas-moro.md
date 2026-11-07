@@ -4,7 +4,7 @@ fecha: "2021-04-18"
 secciones: ["utopistas"]
 original: "/utopistas/tomas-moro/"
 ---
-[Imagen: Retrato de Tomás Moro por Hans Holbein el Joven](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/Hans_Holbein_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project-1568x1951.jpg)
+![Retrato de Tomás Moro por Hans Holbein el Joven](/nolugaria/2021/04/Hans_Holbein_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project-1568x1951.jpg)
 
 De Hans Holbein el Joven, dominio público, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=13466190)
 

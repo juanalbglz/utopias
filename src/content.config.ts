@@ -15,6 +15,9 @@ const entradas = defineCollection({
     subseccion: z.string().optional(),
     etiquetas: z.array(z.string()).default([]),
     original: z.string(),
+    // Fichas escritas en la reconstrucción (no estaban en el blog original) y sus fuentes.
+    nueva: z.boolean().default(false),
+    fuentes: z.array(z.object({ titulo: z.string(), url: z.string().url() })).default([]),
   }),
 });
 

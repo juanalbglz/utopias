@@ -5,7 +5,7 @@ secciones: ["utopias"]
 subseccion: "Juan Alberto González"
 original: "/experiencias-utopica/juan-alberto-gonzalez/agroecologia-en-la-palma/"
 ---
-[Imagen: Imagen de trealon en Pixabay](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/future-431270_1920-1568x1176.jpg)
+![Imagen de trealon en Pixabay](/nolugaria/2021/05/future-431270_1920-1568x1176.jpg)
 
 Imagen de [trealon](https://pixabay.com/es/users/trealon-106306/) en [Pixabay](https://pixabay.com/es/)
 

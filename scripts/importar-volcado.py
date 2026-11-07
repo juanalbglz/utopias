@@ -63,11 +63,45 @@ def iframe(url):
 def imagen(m):
     return figura(m.group(1), m.group(2))
 
+# Imágenes que se sirven desde la propia web (public/nolugaria/). Las descarga el flujo
+# .github/workflows/descargar-imagenes.yml a partir de scripts/imagenes.tsv.
+DESCARGAS = {}
+FICHAS = {
+    'Arcadi Oliveres': '/utopistas/arcadi-oliveres-i-boadella/',
+    'Nuria Güell': '/utopistas/nuria-guell/',
+    'Federica Montseny': '/utopistas/federica-montseny/',
+    'Antoni Gaudi': '/utopistas/antoni-gaudi/',
+    'Iztiar González': '/utopistas/itziar-gonzalez/',
+    'Marina Garcés': '/utopistas/marina-garces/',
+}
+PUBLICO = pathlib.Path('public')
+
+def local(url):
+    m = re.search(r'(?:nolugaria|utopias)\.noblogs\.org/files/(.+)$', url)
+    if m:
+        ruta = m.group(1)
+        fuentes = [f'{WB}id_/https://{h}.noblogs.org/files/{ruta}' for h in ('nolugaria', 'utopias')]
+        # Si la miniatura (-1024x394) no está archivada, se prueba con el original.
+        original = re.sub(r'-\d+x\d+(\.\w+)$', r'\1', ruta)
+        if original != ruta:
+            fuentes += [f'{WB}id_/https://{h}.noblogs.org/files/{original}' for h in ('nolugaria', 'utopias')]
+    else:
+        nombre = re.sub(r'[^\w.-]', '_', url.split('?')[0].rstrip('/').rsplit('/', 1)[-1])
+        ruta = f'externas/{nombre}'
+        fuentes = [url, f'{WB}id_/{url}']
+    return f'nolugaria/{ruta}', fuentes
+
 def figura(alt, url):
     alt, url = re.sub(r'\s+', ' ', alt.strip()), url.strip()
-    if 'noblogs.org/files/' in url: url = f'{WB}im_/{url}'
     texto = alt if alt else 'imagen'
-    return f'[Imagen: {texto}]({url})'
+    if 'wikipedia.org/w/skins/' in url or 'Icon_External_Link' in url: return '↗'  # icono de enlace externo
+    if 'mail.riseup.net' in url: return ''  # captura de un correo privado: no se publica
+    destino, fuentes = local(url)
+    DESCARGAS[destino] = fuentes
+    if (PUBLICO / destino).exists():
+        return f'![{alt}](/{destino})'
+    enlace = fuentes[0] if 'noblogs.org/files/' in url else url
+    return f'[Imagen: {texto}]({enlace.replace("id_/", "im_/")})'
 
 def limpiar(t):
     t = t.replace('¿Te ha parecido interesante?', '').replace('‌', '')
@@ -90,6 +124,9 @@ def limpiar(t):
     t = re.sub(r'([?&])ref_src=twsrc%5Etfw', '', t)
     t = re.sub(r'\n[ \t]+\n', '\n\n', t)
     t = re.sub(r'\n{3,}', '\n\n', t)
+    # Lista de pensadoras de «Gracias Pere»: cada nombre enlaza a su ficha.
+    for nombre, ruta in FICHAS.items():
+        t = re.sub(rf'^{re.escape(nombre)}(  )?$', rf'[{nombre}]({ruta})\1', t, flags=re.M)
     return t.strip() + '\n'
 
 def main(src):
@@ -124,6 +161,10 @@ def main(src):
         lineas = ['---'] + [f'{k}: {json.dumps(v, ensure_ascii=False)}' for k, v in fm.items()] + ['---', '']
         destino.write_text('\n'.join(lineas) + texto, encoding='utf-8')
         print(destino)
+
+    with open('scripts/imagenes.tsv', 'w', encoding='utf-8') as f:
+        for destino, fuentes in sorted(DESCARGAS.items()):
+            f.write('\t'.join([destino, *fuentes]) + '\n')
 
 if __name__ == '__main__':
     main(sys.argv[1])

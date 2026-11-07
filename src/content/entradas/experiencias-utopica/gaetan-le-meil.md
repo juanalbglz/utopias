@@ -4,7 +4,7 @@ fecha: "2021-05-31"
 secciones: ["utopias", "utopistas"]
 original: "/experiencias-utopica/gaetan-le-meil/"
 ---
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/2005072710405619_low1.jpg)
+![](/nolugaria/2021/05/2005072710405619_low1.jpg)
 
 Conocí a Gaëtan Le Meil al poco de estar por Plouhinec. En mis busquedas de una oportunidad de integración y sin encontrar cursos que me permitieran aprender francés como adulto gratuitamente, seguí indagando en la agricultura ecológica y le propuse hacer wwoof (World Wide Opportunities on Organic Farming [↗](https://wwoof.es/)).
 

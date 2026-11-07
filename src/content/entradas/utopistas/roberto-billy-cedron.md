@@ -6,7 +6,7 @@ original: "/utopistas/roberto-billy-cedron/"
 ---
 A Roberto Cedrón lo conocí en 2005 en Douarnenez 
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/Icon_External_Link.png)
+↗
 
 , pequeña población del Finisterre bretón, en la que tenía su taller, en la época en «Ma Friche Mar Pijl».
 
@@ -50,42 +50,42 @@ El Buenos Aires que evoca y que pinta es el de sus recuerdos mezclados con su im
 
 En 2009 apareció en la película “La vereda de enfrente” de Antonin Alloggio, cuarenta años después de haber sido el actor principal de una película homónima dirigida por su hermano Jorge. En la década de 2000, Roberto Cedrón participó en las actuaciones-instalación de su hijo músico Manuel Cedrón. Este proyecto titulado “Cuadros de una exposición” es objeto de una residencia creativa en el centro cultural Coglais de Montours donde se presentó en marzo de 2015.
 
-[Imagen: Asombro - marron](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfhpe7-7f38104b-c1ac-435f-a252-180ce176954d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZocGU3LTdmMzgxMDRiLWMxYWMtNDM1Zi1hMjUyLTE4MGNlMTc2OTU0ZC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.mMSpqaWu3SNuhdpEBXNRKMzSaf4eZ8Va8PTihzWhoMk)
+![Asombro - marron](/nolugaria/externas/dfhpe7-7f38104b-c1ac-435f-a252-180ce176954d.jpg)
 
 Asombro, Roberto Cedrón 2005 
 
 Roberto Cedrón murió en Douarnenez el 16 de mayo de 2018.
 
-[Imagen: Aparicion - marron](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfd2j5-dee0dc5c-53d2-4266-94d8-4eaf662690d7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZkMmo1LWRlZTBkYzVjLTUzZDItNDI2Ni05NGQ4LTRlYWY2NjI2OTBkNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.M9f_jNsPhLEdV-i229c5Ubd9OUX3bvQDI9XurA6P29Y)
+![Aparicion - marron](/nolugaria/externas/dfd2j5-dee0dc5c-53d2-4266-94d8-4eaf662690d7.jpg)
 
 Le Baisser au ton, Roberto Cedrón 2005 
 
 Con Roberto inicié mi relación con el arte de manera profesional. Inicié como aprendiz , aprendiendo linograbado, y asistiéndole en sus creaciones de pasteles y tinta china, o en la impresión de linóneos con aquella vieja prensa que nos hacía afinar los soportes.
 
-[Imagen: Le Cafe des Halles - rouge](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfd2kb-412cb8ad-fc3f-4e77-be4d-632a297f660d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZkMmtiLTQxMmNiOGFkLWZjM2YtNGU3Ny1iZTRkLTYzMmEyOTdmNjYwZC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.sqSiNyPyjia0hpUjEqwauuf-vv7pwtuPdQKjSvp4ioQ)
+![Le Cafe des Halles - rouge](/nolugaria/externas/dfd2kb-412cb8ad-fc3f-4e77-be4d-632a297f660d.jpg)
 
 Le Café des Halles, Roberto Cedrón 2005 
 
 Alguna vez, mientras trabajábamos en el taller, hablaba de su viaje por sudamérica, de su estancia en París, de la impotencia que sintió ante el asesinato de su hermano, de lo bello que era Brasil, donde siempre había que sacudirse las botas por la mañana antes de ponérselas, no sea que algún bicho lo usara como madriguera.
 
-[Imagen: BLF](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfd2pm-4d9052f8-1fc4-4e87-ad59-4055ed5c86c7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZkMnBtLTRkOTA1MmY4LTFmYzQtNGU4Ny1hZDU5LTQwNTVlZDVjODZjNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.13Zgv-4Adx4St5fWPa4aL11xO9WgGhv98xQjV2_IdX8)
+![BLF](/nolugaria/externas/dfd2pm-4d9052f8-1fc4-4e87-ad59-4055ed5c86c7.jpg)
 
 De cómo reinaba entonces una ambiente inpensable hoy en día, poder ir por una gasolinera, en coche, y decir «A situação financeira fico ruina» y que el dueño de la gasolinera te invitara a gasolina; ¡si eso no es una utopía hoy en día!
 
-[Imagen: 3 pescados - rouge](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfhq4d-4a9a7304-0f55-41cb-a8c1-d23a0c026329.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZocTRkLTRhOWE3MzA0LTBmNTUtNDFjYi1hOGMxLWQyM2EwYzAyNjMyOS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.8qb96kCkpyKd87O_u1_gsipyq5idvK5ImeuA6IESFdo)
+![3 pescados - rouge](/nolugaria/externas/dfhq4d-4a9a7304-0f55-41cb-a8c1-d23a0c026329.jpg)
 
 3 pescados, Roberto Cedrón 2005 
 
 Su familia provenía de Galicia, una pequeña aldea con el nombre de su apellido, Cedrón, y que estaba muy cerca de donde procedía la familia de Fidel Castro. Contaba que le hubiera gustado llegar hasta cuba, pero que no pudo continuar.
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/image-1024x575.png)
+![](/nolugaria/2021/05/image-1024x575.png)
 
 Cedrón en Rojo y Láncara en Azul, pueblo del que procedía el padre de Fidel Castro.  
 Brais Capelán. (2019, November 17). El origen gallego de Fidel Castro: La “cuna de la revolución” está en Láncara. Retrieved May 28, 2021, from Quincemil website: https://www.elespanol.com/quincemil/articulos/actualidad/el-origen-gallego-de-fidel-castro-la-cuna-de-la-revolucion-esta-en-lancara [↗](https://www.elespanol.com/quincemil/articulos/actualidad/el-origen-gallego-de-fidel-castro-la-cuna-de-la-revolucion-esta-en-lancara)  
 
 Nuestro cotidiano consistía en vernos bien temprano, ya fuera en el taller entre semana, o los fines de semana en el Café des Halles.
 
-[Imagen: Cafe des Halles velo - marron](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88a1db87-5099-4f60-9387-cf52d8cc1041/dfd2if-eec1d237-0d3d-464f-aab4-047ecdcdacc6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YTFkYjg3LTUwOTktNGY2MC05Mzg3LWNmNTJkOGNjMTA0MVwvZGZkMmlmLWVlYzFkMjM3LTBkM2QtNDY0Zi1hYWI0LTA0N2VjZGNkYWNjNi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.rneL2fC0bNsTtT_pvP_qcv4DrQ92u3901COAnVezvlA)
+![Cafe des Halles velo - marron](/nolugaria/externas/dfd2if-eec1d237-0d3d-464f-aab4-047ecdcdacc6.jpg)
 
 Café des Halles velo – Roberto Cedrón 2005 
 
@@ -96,7 +96,7 @@ Por la mañana, visitábamos el súper, comprábamos diariamente los alimentos, 
 
 **El verano, y el otoño, salíamos a trabajar a la Rue Voltaire o en la Anatole France, poníamos unos hilos, y colgábamos a la brisa los grabados, esperando que algún turista o local (más difícilmente) nos alegrara el día y nos financiara por un día. **
 
- [[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/image-1-1024x576.png)](https://www.google.com/maps/@48.0964162,-4.3265652,3a,75y,129.57h,103.6t/data=!3m6!1e1!3m4!1sT4wvHADXl8WadpxV4FYjYA!2e0!7i16384!8i8192)Edificio que albergaba Ma Frich Mar Plij 
+ [![](/nolugaria/2021/05/image-1-1024x576.png)](https://www.google.com/maps/@48.0964162,-4.3265652,3a,75y,129.57h,103.6t/data=!3m6!1e1!3m4!1sT4wvHADXl8WadpxV4FYjYA!2e0!7i16384!8i8192)Edificio que albergaba Ma Frich Mar Plij 
 
 Del edificio donde se ubicaba Ma Frich Mar Plij guardo muy gratos recuerdos, era un edificio inmenso, con una primera planta que se dedicaba a galería, la sede del festival «Les arts dienent»[↗](https://www.letelegramme.fr/local/finistere-sud/ouest-cornouaille/douarnenez/locale/les-arts-dinent-lhuile-la-fete-est-finie-20081110-4140046_1527187.php)que establecía vínculos con otros puertos sardineros del mundo en un festival ecléctico, algunos escultores, un fotógrafo, varios pintores, unidos por la asamblea de un proyecto artístico.
 
