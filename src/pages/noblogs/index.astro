@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getEntry } from 'astro:content';
+const p = (await getEntry('paginas', 'noblogs'))!;
+const blogs = [...(p.body ?? '').matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((m) => ({ nombre: m[1], url: m[2] }));
+---
+<Base title={p.data.titulo} description="Blogs en castellano de la red noblogs.org que enlazaba No Lugaria.">
+  <h1 class="ink">{p.data.titulo}</h1>
+  <p class="lede">Blogs en castellano de la red <a href="https://noblogs.org/">noblogs.org</a>, tal como los enlazaba el blog original.</p>
+  <ul class="columnas">
+    {blogs.map((b) => <li><a href={b.url} rel="noopener">{b.nombre}</a></li>)}
+  </ul>
+</Base>

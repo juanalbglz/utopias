@@ -1,8 +1,10 @@
 ---
 import '../styles/global.css';
 
-interface Props { title: string; description: string; inicio?: boolean }
-const { title, description, inicio } = Astro.props;
+import { SECCIONES } from '../lib/nolugaria';
+
+interface Props { title: string; description: string; inicio?: boolean; actual?: string }
+const { title, description, inicio, actual } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const home = 'https://juanalbglz.eu/';
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -12,7 +14,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{inicio ? `${title} · Juan Alberto González` : `${title} · Utopía y revolución`}</title>
+    <title>{inicio ? 'No Lugaria · Utopías artísticas' : `${title} · No Lugaria`}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
@@ -36,19 +38,35 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           <a href={home}>Inicio</a>
           <a href={`${home}blog/`}>Blog</a>
           <a href="https://arthist.juanalbglz.eu/">Arthist</a>
-          <a href={base} aria-current={inicio ? 'page' : undefined}>Utopías</a>
+          <a href={base} aria-current="page">Nolugaria</a>
           <a href="https://canarias.africa/">Canarias.Africa</a>
           <a href={`${home}#contacto`}>Contacto</a>
           <a href="https://mastodon.art/@juanalbglz" rel="me">Mastodon</a>
         </nav>
       </div>
     </header>
+    <div class="nolugaria">
+      <div class="wrap">
+        <a class="nl-marca" href="/" aria-current={inicio ? 'page' : undefined}>
+          <span class="nombre">No Lugaria</span>
+          <span class="lema">Utopías artísticas</span>
+        </a>
+        <nav aria-label="Nolugaria">
+          {SECCIONES.filter((s) => s.menu).map((s) => (
+            <a href={s.ruta} aria-current={actual === s.id ? 'page' : undefined}>{s.nombre}</a>
+          ))}
+          <a href="/mapa/" aria-current={actual === 'mapa' ? 'page' : undefined}>Mapa</a>
+          <a href="/participa/" aria-current={actual === 'participa' ? 'page' : undefined}>¡Participa!</a>
+        </nav>
+      </div>
+    </div>
     <main id="main" class="wrap">
       <slot />
     </main>
     <footer class="site">
       <div class="wrap">
-        <span>© Juan Alberto González · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a> · Mapa: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público)</span>
+        <span>No Lugaria, por nolugaria (œu-topia) · Textos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license">CC BY-SA 4.0</a>; cada imagen o vídeo enlazado conserva la licencia de su autoría · <a href="/creditos/">Créditos</a></span>
+        <span>Mapa: datos de Juan Alberto González, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> · Cartografía: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público)</span>
         <span>Esta web no usa cookies, analítica ni rastreadores.</span>
       </div>
     </footer>

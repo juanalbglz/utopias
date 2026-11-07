@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListaEntradas from '../../components/ListaEntradas.astro';
+import { todas, type Entrada } from '../../lib/entradas';
+import { slug } from '../../lib/nolugaria';
+
+export async function getStaticPaths() {
+  const lista = await todas();
+  const nombres = new Map<string, string>();
+  for (const e of lista) for (const t of e.data.etiquetas) nombres.set(slug(t), t);
+  return [...nombres].map(([tag, nombre]) => ({
+    params: { tag },
+    props: { nombre, entradas: lista.filter((e) => e.data.etiquetas.some((t) => slug(t) === tag)) },
+  }));
+}
+interface Props { nombre: string; entradas: Entrada[] }
+const { nombre, entradas } = Astro.props;
+---
+<Base title={`Etiqueta: ${nombre}`} description={`Entradas de No Lugaria con la etiqueta «${nombre}».`}>
+  <p class="eyebrow">Etiqueta</p>
+  <h1 class="ink">{nombre}</h1>
+  <ListaEntradas entradas={entradas} />
+</Base>

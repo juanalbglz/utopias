@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListaEntradas from '../../components/ListaEntradas.astro';
+import { todas, type Entrada } from '../../lib/entradas';
+import { SECCIONES, slug, subRuta } from '../../lib/nolugaria';
+
+export async function getStaticPaths() {
+  const lista = await todas();
+  const rutas: any[] = [];
+  for (const s of SECCIONES) {
+    const de = lista.filter((e) => e.data.secciones.includes(s.id));
+    if (!de.length) continue;
+    const subs = [...new Set(de.map((e) => e.data.subseccion).filter(Boolean))] as string[];
+    rutas.push({ params: { cat: s.ruta.replace(/^\/category\/|\/$/g, '') }, props: { s, entradas: de, subs } });
+    for (const sub of subs) {
+      rutas.push({
+        params: { cat: subRuta(s.id, sub).replace(/^\/category\/|\/$/g, '') },
+        props: { s, sub, entradas: de.filter((e) => e.data.subseccion === sub), subs: [] },
+      });
+    }
+  }
+  return rutas;
+}
+interface Props { s: (typeof SECCIONES)[number]; sub?: string; entradas: Entrada[]; subs: string[] }
+const { s, sub, entradas, subs } = Astro.props;
+const titulo = sub ? `${s.nombre}: ${sub}` : s.nombre;
+---
+<Base title={titulo} description={`Entradas de No Lugaria en ${titulo}.`} actual={s.id}>
+  <p class="eyebrow">{sub ? <a href={s.ruta}>{s.nombre}</a> : 'Sección'}</p>
+  <h1 class="ink">{sub ?? s.nombre}</h1>
+  {'texto' in s && !sub && <p class="lede">{s.texto}</p>}
+  {subs.length > 0 && (
+    <p class="subs">Subsecciones: {subs.map((x, i) => <>{i > 0 && ' · '}<a href={subRuta(s.id, x)}>{x}</a></>)}</p>
+  )}
+  <ListaEntradas entradas={entradas} />
+</Base>

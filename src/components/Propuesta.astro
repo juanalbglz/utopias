@@ -1,0 +1,35 @@
+---
+import { CATEGORIAS } from '../lib/datos';
+interface Props { titulo?: string }
+const { titulo = 'Propón otra utopía' } = Astro.props;
+---
+  <section class="propuesta" id="propuesta">
+    <h2>{titulo}</h2>
+    <div class="card">
+      <p>¿Falta una revuelta, una comunidad, un libro o una obra que imagine otro mundo? Cuéntamela. Reviso cada propuesta antes de añadirla al mapa.</p>
+      <form class="contact" method="post" action="https://buzon.juanalbglz.eu/contacto.php">
+        <input type="hidden" name="lang" value="es" />
+        <input type="hidden" name="tipo" value="utopia" />
+        <label>Qué propones<input name="titulo" required maxlength="200" placeholder="Por ejemplo: Comuna de París" /></label>
+        <div class="dos">
+          <label>Cuándo<input name="fechas" required maxlength="100" placeholder="1871, o 1520–1522, o 73 a. C." /></label>
+          <label>Dónde<input name="lugar" required maxlength="200" placeholder="Ciudad, región o país" /></label>
+        </div>
+        <label>Tipo
+          <select name="categoria">
+            {CATEGORIAS.map((c) => <option>{c.nombre}</option>)}
+            <option>Otro / no lo sé</option>
+          </select>
+        </label>
+        <label>Cuéntamelo<textarea name="mensaje" required maxlength="5000" rows="6" placeholder="Qué pasó o qué propone, y por qué debería estar en el mapa"></textarea></label>
+        <label>Un enlace para saber más <span class="opcional">(opcional)</span><input name="enlace" type="url" maxlength="500" placeholder="https://" /></label>
+        <div class="dos">
+          <label>Tu nombre<input name="nombre" required maxlength="100" autocomplete="name" /></label>
+          <label>Tu correo<input name="correo" type="email" required maxlength="200" autocomplete="email" /></label>
+        </div>
+        <label class="trap" aria-hidden="true">Web<input name="web" tabindex="-1" autocomplete="off" /></label>
+        <p class="meta">Tu propuesta me llega por correo y solo uso tu dirección para responderte. No se guarda en ninguna base de datos.</p>
+        <button type="submit">Enviar propuesta</button>
+      </form>
+    </div>
+  </section>

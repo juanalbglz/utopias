@@ -1,4 +1,22 @@
-# Utopía y revolución · mapa y línea de tiempo
+# No Lugaria · utopías artísticas
+
+Reconstrucción de **No Lugaria** («no lugar», œu-topia), el blog que recopilaba experiencias utópicas en el arte y en la vida (nolugaria.noblogs.org, 2021), y su mapa de revueltas, revoluciones y utopías. Se publica en [utopias.juanalbglz.eu](https://utopias.juanalbglz.eu).
+
+- `/` portada, con el menú original: Utopías, Utopistas, Terminología, Biblioteca utópica, Colaboraciones y ¡Participa!
+- Las entradas conservan sus direcciones de WordPress (`/utopistas/tomas-moro/`, `/category/biblioteca-utopica/`, `/tag/utopia/`…).
+- `/mapa/` el mapa y la línea de tiempo (antes en la portada; los enlaces antiguos `/#suceso` redirigen solos).
+
+## Entradas del blog
+
+Cada entrada es un Markdown en `src/content/entradas/`, en la misma ruta que tenía en el blog. Se generaron desde un volcado de la Wayback Machine:
+
+```sh
+python3 -I scripts/importar-volcado.py volcado-wayback.md
+```
+
+El importador quita los PDF de las novelas de Huxley (con derechos vigentes), cambia el correo del proyecto por el formulario de propuestas y deja imágenes y vídeos de terceros como enlaces, nunca incrustados. Las imágenes destacadas que no venían en el volcado están en `DESTACADAS`, dentro del script. Para escribir una entrada nueva basta con copiar otra y cambiar la cabecera.
+
+## El mapa
 
 Revueltas populares, pensamiento utópico, experiencias utópicas y arte y utopía, de Lagash (2380 a. C.) a Senegal (2021), en un mapa del mundo con su línea de tiempo. Se publica en [utopias.juanalbglz.eu](https://utopias.juanalbglz.eu).
 
@@ -22,7 +40,7 @@ Todo está en una hoja: `src/data/utopia-y-revolucion.csv`, con las mismas colum
 
 Para encontrar unas coordenadas: en [openstreetmap.org](https://www.openstreetmap.org), clic derecho sobre el sitio → «Mostrar dirección»; las dos cifras de arriba son latitud y longitud.
 
-Cada suceso tiene su dirección: `utopias.juanalbglz.eu/#revolucion-francesa` (el título sin tildes ni signos).
+Cada suceso tiene su dirección: `utopias.juanalbglz.eu/mapa/#revolucion-francesa` (el título sin tildes ni signos).
 
 ## Imágenes
 
@@ -44,6 +62,8 @@ Cada cambio en `main` se publica solo en GitHub Pages (`.github/workflows/deploy
 
 El botón «Propón otra utopía» envía el formulario al buzón de `buzon.juanalbglz.eu/contacto.php` (repositorio juanalbglz.github.io, carpeta `servidor/`), que lo reenvía por correo. Nada se guarda en la web.
 
+Si cambia el dominio, hay que añadir el nuevo origen a la lista `web` de `contacto.config.php` en el servidor.
+
 ## Licencias
 
-Textos y datos: CC BY-NC-SA 4.0. Mapa: Natural Earth (dominio público). Tipografía: Bricolage Grotesque (OFL). Imágenes: las de cada archivo de Wikimedia Commons, indicadas en su ficha.
+Textos del blog: CC BY-SA 4.0, como el original. Datos del mapa: CC BY-NC-SA 4.0. Mapa: Natural Earth (dominio público). Tipografía: Bricolage Grotesque (OFL). Imágenes: las de cada archivo de Wikimedia Commons, indicadas en su ficha.

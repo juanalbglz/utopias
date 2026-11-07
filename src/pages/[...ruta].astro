@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import { render } from 'astro:content';
+import { todas, type Entrada } from '../lib/entradas';
+import { CAPTURA, fecha, seccion, subRuta, etiquetaRuta } from '../lib/nolugaria';
+
+export async function getStaticPaths() {
+  const lista = await todas();
+  return lista.map((e, i) => ({
+    params: { ruta: e.data.original.replace(/^\/|\/$/g, '') },
+    props: { e, anterior: lista[i + 1], siguiente: lista[i - 1] },
+  }));
+}
+interface Props { e: Entrada; anterior?: Entrada; siguiente?: Entrada }
+const { e, anterior, siguiente } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(e);
+const principal = e.data.secciones[0];
+const texto = e.body?.replace(/\[[^\]]*\]\([^)]*\)|[*_#<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 155) ?? '';
+---
+<Base title={e.data.titulo} description={texto} actual={principal}>
+  <article class="entrada">
+    <header>
+      <p class="eyebrow">
+        {e.data.secciones.map((s, i) => <>{i > 0 && ' · '}<a href={seccion(s).ruta}>{seccion(s).nombre}</a></>)}
+        {e.data.subseccion && <> · <a href={subRuta(principal, e.data.subseccion)}>{e.data.subseccion}</a></>}
+      </p>
+      <h1 class="ink">{e.data.titulo}</h1>
+      <p class="meta">Publicada el <time datetime={e.data.fecha.toISOString().slice(0, 10)}>{fecha(e.data.fecha)}</time> por nolugaria (œu-topia)</p>
+    </header>
+    <div class="prose"><Content /></div>
+    <footer class="pie-entrada">
+      {e.data.etiquetas.length > 0 && (
+        <p class="etiquetas">Etiquetas: {e.data.etiquetas.map((t, i) => <>{i > 0 && ', '}<a href={etiquetaRuta(t)}>{t}</a></>)}</p>
+      )}
+      <p class="meta">Entrada recuperada del blog original. <a href={`${CAPTURA}${e.data.original}`} rel="noopener">Ver la copia archivada</a>.</p>
+    </footer>
+  </article>
+  <nav class="vecinas" aria-label="Entradas">
+    {anterior ? <a href={anterior.data.original} rel="prev"><span class="meta">← Entrada anterior</span>{anterior.data.titulo}</a> : <span />}
+    {siguiente && <a href={siguiente.data.original} rel="next" class="sig"><span class="meta">Entrada siguiente →</span>{siguiente.data.titulo}</a>}
+  </nav>
+</Base>
