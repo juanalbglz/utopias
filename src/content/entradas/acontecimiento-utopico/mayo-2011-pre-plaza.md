@@ -14,7 +14,7 @@ Este es Luis.
 
 Por el bar siempre ronda algún periódico, casualmente ese dia constaté el duro bombardeo de sloganes con que se nos castigaban frente a las inminentes elecciones autonómicas del 22 de Mayo y pensé en documentarlo, con algún fin oculto que ha latido en mi durante 10 años.
 
-- [Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_15-1024x418.jpg)  
+- ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_15-1024x418.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_01-1024x647.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_02-1024x683.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_03-1024x393.jpg)  
@@ -24,8 +24,8 @@ Por el bar siempre ronda algún periódico, casualmente ese dia constaté el dur
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_07-1024x950.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_08-1024x405.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_09-1024x386.jpg)  
-- [Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_10-1024x394.jpg)  
-- [Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_11-1024x639.jpg)  
+- ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_10-1024x394.jpg)  
+- ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_11-1024x639.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_12-1024x379.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_13-1024x458.jpg)  
 - ![](/nolugaria/2021/04/18.05.11-Propaganda_Electoral_Elecciones_autonomicas_Canarias_2011_14-1024x414.jpg)  
