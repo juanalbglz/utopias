@@ -9,7 +9,7 @@ En el año 2004 decidí romper con la vida que llevaba hasta el momento. Tenía 
 
 Mi trabajo consistía en traducir y normalizar características técnicas de bienes de consumo electrónicos, en inglés, alemán y español, y aunque todos los días aprendía muchas cosas, tras dos años dedicado a esa labor, había comenzaro a ser crítico con ella, y darme cuenta de que, si bien ayudábamos a una mejor elección de productos de esta sociedad capitalista, seguía trabajado para ella, generando deseos, necesidades y esclavitud.
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/office-work_42H3JH8QI51.jpg)
+![](/nolugaria/2021/05/office-work_42H3JH8QI51.jpg)
 
 *Office Work Free Stock CC0 Photo*. (2021). StockSnap. [↗](https://stocksnap.io/photo/office-work-42H3JH8QI5)  
 
@@ -21,7 +21,7 @@ Tras varias experiencias con jovenes mayoritariamente Erasmus, y las distintas o
 
 La producción de bienes de consumo se encarga de destrozar el planeta y las relaciones entre las personas, así que me decidí a poner el peso de mi persona en el lado opuesto de la balanza, o a intentarlo, así que el tres de mayo de ese año, tras tres meses de procrastinación, llegué en barco al puerto de Santa Cruz de La Palma.
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/Santacruzpuerto1-1024x683.jpg)
+![](/nolugaria/2021/05/Santacruzpuerto1-1024x683.jpg)
 
 *File:Santacruzpuerto.jpg – Wikimedia Commons*. (2020). Wikimedia.org [↗](https://commons.wikimedia.org/wiki/File:Santacruzpuerto.jpg).   
 
@@ -33,7 +33,7 @@ Orestes Diaz Perera. (2011). FIESTAS DE LAS CRUCES BREÑA ALTA LA PALMA [YouTube
 
 Tenía decidido dedicarme a cooperar con alguien, pero aún no había conseguido un contacto, y si bien quería seguir las líneas de la asociación WWOOF, no estimaba correcto tener que pagar por acceder a los contactos de las personas que ofrecían este tipo de experiencias. Una compañera francesa había conseguido una plaza en una escuelita en el municipio de Mazo, así que en mi búsqueda de un recurso, llegué hasta el municipio de Tijarafe, a casa de una familia de artesanas de la lana, que posteriormente se llamó Lilylana.
 
-[Imagen: imagen](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/43787765_2219912968083650_1146115076659347456_n1-724x1024.jpg)
+![](/nolugaria/2021/05/43787765_2219912968083650_1146115076659347456_n1-724x1024.jpg)
 
 *CIT Insular Tedote-ASDETUR La Palma – Publicaciones*. (2021). Facebook.com [↗](https://www.facebook.com/CITTEDOTELAPALMA/posts/2219912958083651).   
 

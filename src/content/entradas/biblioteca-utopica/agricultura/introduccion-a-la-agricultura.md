@@ -80,7 +80,7 @@ Minimalistamente. (2020). Cómo hacer un HUERTO urbano en el BALCÓN ¡FACILÍSI
 ### Solicita semilla autóctona:  
 ¡Contribuye a su conservación!
 
-[Imagen: imagen](https://ccbat.es/images/logo-g.png)
+![](/nolugaria/externas/logo-g.png)
 
   [Solicitar Semilla](https://ccbat.es/banco.php?gen=Todos&esp=Todas&cul=Tomate)    
 

@@ -5,7 +5,7 @@ secciones: ["colaboraciones"]
 etiquetas: ["Antoni Gaudi", "Arcadi Oliveres", "Calafou de l'Anoia", "Can Masdeu", "colaboración", "experiencias utópicas", "Grupo Ecos", "I Nau Bostik", "Itziar González", "Marina Garcés", "Nuria Güell", "pensadoras utópicas", "Pere", "trabajo en proceso"]
 original: "/colaboraciones-utopicas/gracias-pere/"
 ---
-[Imagen: Imagen de mohamed Hassan en Pixabay](https://web.archive.org/web/20250922020329im_/https://nolugaria.noblogs.org/files/2021/05/hands-2715976_640.png)
+![Imagen de mohamed Hassan en Pixabay](/nolugaria/2021/05/hands-2715976_640.png)
 
 Imagen de [mohamed Hassan](https://pixabay.com/es/users/mohamed_hassan-5229782/) en [Pixabay](https://pixabay.com/es/)
 
@@ -14,12 +14,12 @@ Hoy hemos recibido la inestimable ayuda de Pere, que nos ha enviado un correo, i
 Así que de esta manera, añadimos a la información pendiente de trabajar:
 
 Pensadoras:  
-Arcadi Oliveres  
-Nuria Güell  
-Federica Montseny  
-Antoni Gaudi  
-Iztiar González  
-Marina Garcés
+[Arcadi Oliveres](/utopistas/arcadi-oliveres-i-boadella/)  
+[Nuria Güell](/utopistas/nuria-guell/)  
+[Federica Montseny](/utopistas/federica-montseny/)  
+[Antoni Gaudi](/utopistas/antoni-gaudi/)  
+[Iztiar González](/utopistas/itziar-gonzalez/)  
+[Marina Garcés](/utopistas/marina-garces/)
 
 Experiencias:  
 Calafou de l’Anoia – colonia eco industrial postcapitalista  

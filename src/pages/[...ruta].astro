@@ -32,7 +32,16 @@ const texto = e.body?.replace(/\[[^\]]*\]\([^)]*\)|[*_#<>]/g, ' ').replace(/\s+/
       {e.data.etiquetas.length > 0 && (
         <p class="etiquetas">Etiquetas: {e.data.etiquetas.map((t, i) => <>{i > 0 && ', '}<a href={etiquetaRuta(t)}>{t}</a></>)}</p>
       )}
-      <p class="meta">Entrada recuperada del blog original. <a href={`${CAPTURA}${e.data.original}`} rel="noopener">Ver la copia archivada</a>.</p>
+      {e.data.nueva ? (
+        <>
+          <p class="meta">Ficha nueva de la reconstrucción de nolugaria, a partir de la lista de pensadoras que propuso Pere en <a href="/colaboraciones-utopicas/gracias-pere/">Gracias Pere</a>.</p>
+          {e.data.fuentes.length > 0 && (
+            <p class="meta">Fuentes: {e.data.fuentes.map((f, i) => <>{i > 0 && '; '}<a href={f.url} rel="noopener">{f.titulo}</a></>)}.</p>
+          )}
+        </>
+      ) : (
+        <p class="meta">Entrada recuperada del blog original. <a href={`${CAPTURA}${e.data.original}`} rel="noopener">Ver la copia archivada</a>.</p>
+      )}
     </footer>
   </article>
   <nav class="vecinas" aria-label="Entradas">
